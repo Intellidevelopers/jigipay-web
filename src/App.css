@@ -32,7 +32,7 @@
 }
 .screen1{
   background-color: #ffffff;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,4 +54,12 @@
 }
 .btns{
   display: flex;
+  gap: 120px;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+a{
+  text-decoration: none;
+  color: rgb(59, 59, 59);
+  font-size: 18px;
 }

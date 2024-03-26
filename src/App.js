@@ -33,22 +33,22 @@ function OnboardingScreen({ onNext, index }) {
   };
 
   return (
-    <div className="screen1">
-    <img className='pana' src={pana} alt="Logo" />
-    <br />
-    <br />
-    <br />
+    <><div className="screen1">
+      <img className='pana' src={pana} alt="Logo" />
+      <br />
+      <br />
+      <br />
       <h2>Budgeting Redefined!</h2>
-      <p>{descriptions[index]}</p>
-      <p className='bd-text'>Take control of your spending, set goals, and watch your financial dreams come to life. 
-      Our intuitive budgeting feature empowers you to manage your money with precision.</p>
-      <div className='btns'>
-      <a href='next' >
-          Skip
-      </a>
-      <button className='btn-next' onClick={handleNext}>Next</button>
-      </div>
+      <p>{descriptions[index +1]}</p>
+      <p className='bd-text'>Take control of your spending, set goals, and watch your financial dreams come to life.
+        Our intuitive budgeting feature empowers you to manage your money with precision.</p>
     </div>
+    <div className='btns'>
+        <a href='next'>
+          Skip
+        </a>
+        <button className='btn-next' onClick={handleNext}>Next</button>
+      </div></>
   );
 }
 
